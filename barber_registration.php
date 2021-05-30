@@ -33,7 +33,7 @@
 		$email = strtolower(trim($_POST['email']));
 		$password = $_POST['password'];
 		$usertype = $_POST['usertype'];
-		$userid = $_POST['userid'];
+		// $userid = $_POST['userid'];
 
 		$getEmail = $DB->query("SELECT email FROM users WHERE email=?", array($email));
 		if($getEmail == null){
