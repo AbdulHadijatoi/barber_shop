@@ -14,6 +14,8 @@
 	}
 
 	include_once("includes/db_connection.php");
+	require_once("database/PDO.class.php");
+	$DB = new Db(DBHost, DBPort, DBName, DBUser, DBPassword);
 
 	if(isset($_POST['submit'])){
 		

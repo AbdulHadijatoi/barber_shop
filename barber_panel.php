@@ -3,9 +3,7 @@
 if (session_id() == '') {
 	session_start();
 }
-// echo "<pre>";
-// print_r($_SESSION);
-// exit();
+
 if (isset($_SESSION['user_email'])) {
 	if ($_SESSION['user_type'] != 2) {
 		header("location: index.php");

@@ -4,6 +4,8 @@ session_start();
 
 
 include_once("includes/db_connection.php");
+require_once("database/PDO.class.php");
+$DB = new Db(DBHost, DBPort, DBName, DBUser, DBPassword);
 
 $userDoesntExist = false;
 if (isset($_POST['submit'])) {
